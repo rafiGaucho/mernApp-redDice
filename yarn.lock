@@ -176,6 +176,13 @@ atob@^2.1.1:
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
   integrity sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
 
+axios@0.13.1:
+  version "0.13.1"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.13.1.tgz#3e67abfe4333bc9d2d5fe6fbd13b4694eafc8df8"
+  integrity sha1-Pmer/kMzvJ0tX+b70TtGlOr8jfg=
+  dependencies:
+    follow-redirects "0.0.7"
+
 babel-cli@^6.10.1:
   version "6.26.0"
   resolved "https://registry.yarnpkg.com/babel-cli/-/babel-cli-6.26.0.tgz#502ab54874d7db88ad00b887a06383ce03d002f1"
@@ -1509,6 +1516,14 @@ find-up@^1.0.0:
     path-exists "^2.0.0"
     pinkie-promise "^2.0.0"
 
+follow-redirects@0.0.7:
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-0.0.7.tgz#34b90bab2a911aa347571da90f22bd36ecd8a919"
+  integrity sha1-NLkLqyqRGqNHVx2pDyK9NuzYqRk=
+  dependencies:
+    debug "^2.2.0"
+    stream-consume "^0.1.0"
+
 for-in@^1.0.1, for-in@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/for-in/-/for-in-1.0.2.tgz#81068d295a8142ec0ac726c6e2200c30fb6d5e80"
@@ -1719,7 +1734,7 @@ history@^2.0.1:
     query-string "^3.0.0"
     warning "^2.0.0"
 
-hoist-non-react-statics@^1.0.5:
+hoist-non-react-statics@^1.0.3, hoist-non-react-statics@^1.0.5:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-1.2.0.tgz#aa448cf0986d55cc40773b17174b7dd066cb7cfb"
   integrity sha1-qkSM8JhtVcxAdzsXF0t90GbLfPs=
@@ -2159,6 +2174,11 @@ loader-utils@^0.2.11, loader-utils@^0.2.16:
     json5 "^0.5.0"
     object-assign "^4.0.1"
 
+lodash-es@^4.2.1:
+  version "4.17.11"
+  resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.17.11.tgz#145ab4a7ac5c5e52a3531fb4f310255a152b4be0"
+  integrity sha512-DHb1ub+rMjjrxqlB3H56/6MXtm1lSksDp2rA2cNWjG8mlDUYFhUj3Di2Zn5IwSU87xLv8tNIQ7sSwE/YOX/D/Q==
+
 lodash.debounce@^4.0.8:
   version "4.0.8"
   resolved "https://registry.yarnpkg.com/lodash.debounce/-/lodash.debounce-4.0.8.tgz#82d79bff30a67c4005ffd5e2515300ad9ca4d7af"
@@ -2169,7 +2189,7 @@ lodash@4.13.1:
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.13.1.tgz#83e4b10913f48496d4d16fec4a560af2ee744b68"
   integrity sha1-g+SxCRP0hJbU0W/sSlYK8u50S2g=
 
-lodash@^4.17.4:
+lodash@^4.17.4, lodash@^4.2.0, lodash@^4.2.1:
   version "4.17.11"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.11.tgz#b39ea6229ef607ecd89e2c8df12536891cac9b8d"
   integrity sha512-cQKh8igo5QUhZ7lg38DYWAxMvjSAKG0A8wGSVimP07SIUEK2UO+arSRKbRZWtelMtN5V0Hkwh5ryOto/SshYIg==
@@ -2896,6 +2916,16 @@ react-hot-loader@^1.3.0:
     react-hot-api "^0.4.5"
     source-map "^0.4.4"
 
+react-redux@4.4.5:
+  version "4.4.5"
+  resolved "https://registry.yarnpkg.com/react-redux/-/react-redux-4.4.5.tgz#f509a2981be2252d10c629ef7c559347a4aec457"
+  integrity sha1-9QmimBviJS0QxinvfFWTR6SuxFc=
+  dependencies:
+    hoist-non-react-statics "^1.0.3"
+    invariant "^2.0.0"
+    lodash "^4.2.0"
+    loose-envify "^1.1.0"
+
 react-router@2.5.0:
   version "2.5.0"
   resolved "https://registry.yarnpkg.com/react-router/-/react-router-2.5.0.tgz#e1c97af161e8f92a98c888e38ea758c7f2a8cc3f"
@@ -2939,6 +2969,21 @@ readdirp@^2.0.0:
     graceful-fs "^4.1.11"
     micromatch "^3.1.10"
     readable-stream "^2.0.2"
+
+redux-thunk@2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/redux-thunk/-/redux-thunk-2.1.0.tgz#c724bfee75dbe352da2e3ba9bc14302badd89a98"
+  integrity sha1-xyS/7nXb41LaLjupvBQwK63Ympg=
+
+redux@3.5.2:
+  version "3.5.2"
+  resolved "https://registry.yarnpkg.com/redux/-/redux-3.5.2.tgz#4533745e970b647ec26066a83aa30e9e26faf843"
+  integrity sha1-RTN0XpcLZH7CYGaoOqMOnib6+EM=
+  dependencies:
+    lodash "^4.2.1"
+    lodash-es "^4.2.1"
+    loose-envify "^1.1.0"
+    symbol-observable "^0.2.3"
 
 regenerate@^1.2.1:
   version "1.4.0"
@@ -3294,6 +3339,11 @@ stream-browserify@^2.0.1:
     inherits "~2.0.1"
     readable-stream "^2.0.2"
 
+stream-consume@^0.1.0:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/stream-consume/-/stream-consume-0.1.1.tgz#d3bdb598c2bd0ae82b8cac7ac50b1107a7996c48"
+  integrity sha512-tNa3hzgkjEP7XbCkbRXe1jpg+ievoa0O4SCFlMOYEscGSS4JJsckGL8swUyAa/ApGU3Ae4t6Honor4HhL+tRyg==
+
 stream-http@^2.3.1:
   version "2.8.3"
   resolved "https://registry.yarnpkg.com/stream-http/-/stream-http-2.8.3.tgz#b2d242469288a5a27ec4fe8933acf623de6514fc"
@@ -3381,6 +3431,11 @@ supports-color@^5.2.0, supports-color@^5.3.0:
   integrity sha512-QjVjwdXIt408MIiAqCX4oUKsgU2EqAGzs2Ppkm4aQYbjm+ZEWEcW4SfFNTr4uMNZma0ey4f5lgLrkB0aX0QMow==
   dependencies:
     has-flag "^3.0.0"
+
+symbol-observable@^0.2.3:
+  version "0.2.4"
+  resolved "https://registry.yarnpkg.com/symbol-observable/-/symbol-observable-0.2.4.tgz#95a83db26186d6af7e7a18dbd9760a2f86d08f40"
+  integrity sha1-lag9smGG1q9+ehjb2XYKL4bQj0A=
 
 tapable@^0.1.8, tapable@~0.1.8:
   version "0.1.10"

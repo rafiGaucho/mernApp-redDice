@@ -20,7 +20,7 @@ export default class SignupForm extends React.Component {
   }
   onSubmit (e){
     e.preventDefault();
-    console.log(this.state);
+    this.props.userSignupRequest(this.state)
   }
   render() {
     const options= map(timezones ,(key,val)=>
