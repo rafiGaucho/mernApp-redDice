@@ -7,8 +7,10 @@ let router=express.Router();
 router.post('/',(req,res)=>{
   const {errors,isValid}=validInput(req.body);
 
-  if(!isValid){
-    res.json(errors)
+  if(isValid){
+    res.json({success:true})
+  }else {
+    res.status(400).json(errors)
   }
 })
 
