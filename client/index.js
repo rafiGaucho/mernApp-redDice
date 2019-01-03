@@ -15,7 +15,7 @@ const reducer=(state=initialState,actions)=>{
 }
 
 const store=createStore(
-  reducer,
+  (state={})=>state,
   applyMiddleware(thunk)
 )
 render(<Provider store={store}>
